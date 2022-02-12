@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="banner">
+        <img src="/Images/logo.png" class="logo" >
+        <div class="banner-text">
+            <h1>Hair studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+            <div class="banner-btn">    
+                <a href="#" class="btnone"><span></span>Find out</a>    
+                <a href="#" class="btntwo"><span></span>Read more</a>               
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="/Images/menu.png" id="menu">
+    </div>
+
+<script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="Images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src="Images/menu.png";
+            }
+        }
+</script>
+    
+</body>
+</html>
